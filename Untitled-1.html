@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Argento</title>
+
+  <style>
+
+    /* ESTILOS GENERALES */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eaf6ff;
+      color: #1e3a5f;
+    }
+
+    /* HEADER */
+
+    header {
+      background: linear-gradient(90deg, #74c0fc, #a5d8ff);
+      text-align: center;
+      padding: 30px;
+      color: #003566;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    /* NAVEGACIÓN */
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background-color: #4dabf7;
+      padding: 15px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe066;
+    }
+
+    /* MAIN */
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00509d;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    /* CARTELERA */
+
+    .cartelera {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .pelicula {
+      background-color: white;
+      width: 260px;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .pelicula:hover {
+      transform: scale(1.05);
+    }
+
+    .poster {
+      font-size: 70px;
+      margin-bottom: 15px;
+    }
+
+    .pelicula h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .pelicula p {
+      font-size: 14px;
+      color: #495057;
+    }
+
+    /* HORARIOS */
+
+    select {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #90e0ef;
+      width: 100%;
+      background-color: #caf0f8;
+      color: #023e8a;
+      font-size: 14px;
+    }
+
+    /* BOTONES */
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background-color: #00b4d8;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0096c7;
+    }
+
+    /* FOOTER*/
+
+    footer {
+      margin-top: 40px;
+      background-color: #74c0fc;
+      text-align: center;
+      padding: 20px;
+      color: #003566;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!--NAV-->
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#cartelera">Cartelera</a>
+    <a href="#promociones">Promociones</a>
+    <a href="#entradas">Entradas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!--HEADER-->
+
+  <header id="inicio">
+    <h1>🎬 Cine Argento</h1>
+    <p>Cartelera de películas - Mayo 2026</p>
+  </header>
+
+  <!-- MAIN -->
+
+  <main>
+
+    <!--CARTELERA-->
+
+    <section id="cartelera">
+
+      <h2>Películas en Cartelera</h2>
+
+      <section class="cartelera">
+
+        <!-- PELICULA 1 -->
+        <div class="pelicula">
+          <div class="poster">🥋</div>
+
+          <h3>Mortal Kombat II</h3>
+
+          <p>
+            La batalla definitiva por el Reino de la Tierra comienza.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>14:40</option>
+            <option>17:10</option>
+            <option>19:40</option>
+            <option>21:50</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+        <!-- PELICULA 2 -->
+        <div class="pelicula">
+          <div class="poster">🚀</div>
+
+          <h3>Proyecto Fin del Mundo</h3>
+
+          <p>
+            Un astronauta deberá salvar a la humanidad en el espacio.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>15:45</option>
+            <option>19:05</option>
+            <option>22:30</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+        <!-- PELICULA 3 -->
+        <div class="pelicula">
+          <div class="poster">👻</div>
+
+          <h3>Hokum</h3>
+
+          <p>
+            Una antigua posada esconde secretos aterradores.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>19:20</option>
+            <option>21:50</option>
+            <option>22:30</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+        <!-- PELICULA 4 -->
+        <div class="pelicula">
+          <div class="poster">🐎</div>
+
+          <h3>Uma Musume: Pretty Derby</h3>
+
+          <p>
+            Las corredoras más veloces llegan a la pantalla grande.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>14:00</option>
+            <option>16:20</option>
+            <option>18:40</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+        <!-- PELICULA 5 -->
+        <div class="pelicula">
+          <div class="poster">🎤</div>
+
+          <h3>Michael</h3>
+
+          <p>
+            La historia y legado del Rey del Pop en una biopic impactante.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>18:30</option>
+            <option>20:45</option>
+            <option>23:00</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+        <!-- PELICULA 6 -->
+        <div class="pelicula">
+          <div class="poster">👠</div>
+
+          <h3>El Diablo Viste a la Moda 2</h3>
+
+          <p>
+            Miranda Priestly regresa al mundo de la moda y el poder.
+          </p>
+
+          <select>
+            <option>Seleccionar horario</option>
+            <option>17:00</option>
+            <option>20:30</option>
+            <option>22:45</option>
+          </select>
+
+          <button>Comprar Entrada</button>
+        </div>
+
+      </section>
+
+    </section>
+
+    <!--PROMOCIONES-->
+
+    <section id="promociones">
+
+      <h2>🍿 Promociones</h2>
+
+      <div class="cartelera">
+
+        <div class="pelicula">
+          <h3>2x1 Miércoles</h3>
+
+          <p>
+            Comprando una entrada te llevás otra gratis todos los miércoles.
+          </p>
+        </div>
+
+        <div class="pelicula">
+          <h3>Combo Argento</h3>
+
+          <p>
+            Pochoclos grandes + 2 gaseosas con descuento especial.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ENTRADAS -->
+
+    <section id="entradas">
+
+      <h2>🎟️ Entradas</h2>
+
+      <div class="cartelera">
+
+        <div class="pelicula">
+
+          <p>
+            Seleccioná una película y horario para comprar.
+          </p>
+
+          <select>
+            <option>Elegir película</option>
+            <option>Mortal Kombat II</option>
+            <option>Michael</option>
+            <option>Uma Musume</option>
+          </select>
+
+          <select>
+            <option>Elegir horario</option>
+            <option>17:00</option>
+            <option>20:00</option>
+            <option>22:30</option>
+          </select>
+
+          <button onclick="alert('Entrada reservada correctamente')">
+            Confirmar Compra
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto">
+
+      <h2>📍 Contacto</h2>
+
+      <div class="cartelera">
+
+        <div class="pelicula">
+
+          <p>
+            <strong>Dirección:</strong><br>
+            Av. Corrientes 1234, CABA
+          </p>
+
+          <p>
+            <strong>Teléfono:</strong><br>
+            +54 11 1234-1234
+          </p>
+
+          <p>
+            <strong>Email:</strong><br>
+            soporte@cineargento.com
+          </p>
+
+          <button onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            Volver arriba
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 Cine Argento - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
+```
