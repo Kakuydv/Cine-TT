@@ -8,8 +8,6 @@
 
   <style>
 
-    /* ESTILOS GENERALES */
-
     html {
       scroll-behavior: smooth;
     }
@@ -20,8 +18,6 @@
       background-color: #eaf6ff;
       color: #1e3a5f;
     }
-
-    /* HEADER */
 
     header {
       background: linear-gradient(90deg, #74c0fc, #a5d8ff);
@@ -39,8 +35,6 @@
       margin-top: 10px;
       font-size: 18px;
     }
-
-    /* NAVEGACIÓN */
 
     nav {
       display: flex;
@@ -65,8 +59,6 @@
       color: #ffe066;
     }
 
-    /* MAIN */
-
     main {
       padding: 30px;
     }
@@ -80,8 +72,6 @@
     section {
       margin-top: 60px;
     }
-
-    /* CARTELERA */
 
     .cartelera {
       display: flex;
@@ -104,8 +94,11 @@
       transform: scale(1.05);
     }
 
-    .poster {
-      font-size: 70px;
+    .poster-img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 10px;
       margin-bottom: 15px;
     }
 
@@ -119,8 +112,6 @@
       color: #495057;
     }
 
-    /* HORARIOS */
-
     select {
       margin-top: 15px;
       padding: 10px;
@@ -131,8 +122,6 @@
       color: #023e8a;
       font-size: 14px;
     }
-
-    /* BOTONES */
 
     button {
       margin-top: 15px;
@@ -151,8 +140,6 @@
       background-color: #0096c7;
     }
 
-    /* FOOTER*/
-
     footer {
       margin-top: 40px;
       background-color: #74c0fc;
@@ -166,8 +153,6 @@
 
 <body>
 
-  <!--NAV-->
-
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#cartelera">Cartelera</a>
@@ -176,18 +161,12 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <!--HEADER-->
-
   <header id="inicio">
     <h1>🎬 Cine Argento</h1>
     <p>Cartelera de películas - Mayo 2026</p>
   </header>
 
-  <!-- MAIN -->
-
   <main>
-
-    <!--CARTELERA-->
 
     <section id="cartelera">
 
@@ -195,9 +174,13 @@
 
       <section class="cartelera">
 
-        <!-- PELICULA 1 -->
         <div class="pelicula">
-          <div class="poster">🥋</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/original/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpgq=80&w=1200&auto=format&fit=crop"
+            alt="Mortal Kombat II"
+          >
 
           <h3>Mortal Kombat II</h3>
 
@@ -216,9 +199,13 @@
           <button>Comprar Entrada</button>
         </div>
 
-        <!-- PELICULA 2 -->
         <div class="pelicula">
-          <div class="poster">🚀</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/original/yihdXomYb5kTeSivtFndMy5iDmf.jpg?q=80&w=1200&auto=format&fit=crop"
+            alt="Proyecto Fin del Mundo"
+          >
 
           <h3>Proyecto Fin del Mundo</h3>
 
@@ -236,9 +223,13 @@
           <button>Comprar Entrada</button>
         </div>
 
-        <!-- PELICULA 3 -->
         <div class="pelicula">
-          <div class="poster">👻</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/original/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg?q=80&w=1200&auto=format&fit=crop"
+            alt="Hokum"
+          >
 
           <h3>Hokum</h3>
 
@@ -256,9 +247,13 @@
           <button>Comprar Entrada</button>
         </div>
 
-        <!-- PELICULA 4 -->
         <div class="pelicula">
-          <div class="poster">🐎</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/w600_and_h900_face/jxkIz5oywSb6gU67rylrkCUk1D9.jpg?q=80&w=1200&auto=format&fit=crop"
+            alt="Uma Musume"
+          >
 
           <h3>Uma Musume: Pretty Derby</h3>
 
@@ -276,9 +271,13 @@
           <button>Comprar Entrada</button>
         </div>
 
-        <!-- PELICULA 5 -->
         <div class="pelicula">
-          <div class="poster">🎤</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/original/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg?q=80&w=1200&auto=format&fit=crop"
+            alt="Michael"
+          >
 
           <h3>Michael</h3>
 
@@ -296,9 +295,13 @@
           <button>Comprar Entrada</button>
         </div>
 
-        <!-- PELICULA 6 -->
         <div class="pelicula">
-          <div class="poster">👠</div>
+
+          <img
+            class="poster-img"
+            src="https://image.tmdb.org/t/p/original/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg?q=80&w=1200&auto=format&fit=crop"
+            alt="El Diablo Viste a la Moda 2"
+          >
 
           <h3>El Diablo Viste a la Moda 2</h3>
 
@@ -319,8 +322,6 @@
       </section>
 
     </section>
-
-    <!--PROMOCIONES-->
 
     <section id="promociones">
 
@@ -348,45 +349,76 @@
 
     </section>
 
-    <!-- ENTRADAS -->
-
     <section id="entradas">
 
-      <h2>🎟️ Entradas</h2>
+  <h2>🎟️ Entradas</h2>
 
-      <div class="cartelera">
+  <div class="cartelera">
 
-        <div class="pelicula">
+    <div class="pelicula">
 
-          <p>
-            Seleccioná una película y horario para comprar.
-          </p>
+      <p>
+        Seleccioná una película y horario para comprar.
+      </p>
 
-          <select>
-            <option>Elegir película</option>
-            <option>Mortal Kombat II</option>
-            <option>Michael</option>
-            <option>Uma Musume</option>
-          </select>
+      <!-- SELECT PELICULAS -->
+      <select>
+        <option>Elegir película</option>
 
-          <select>
-            <option>Elegir horario</option>
-            <option>17:00</option>
-            <option>20:00</option>
-            <option>22:30</option>
-          </select>
+        <option>Mortal Kombat II</option>
 
-          <button onclick="alert('Entrada reservada correctamente')">
-            Confirmar Compra
-          </button>
+        <option>Proyecto Fin del Mundo</option>
 
-        </div>
+        <option>Hokum</option>
 
-      </div>
+        <option>Uma Musume: Pretty Derby</option>
 
-    </section>
+        <option>Michael</option>
 
-    <!-- CONTACTO -->
+        <option>El Diablo Viste a la Moda 2</option>
+      </select>
+
+      <!-- SELECT HORARIOS -->
+      <select>
+        <option>Elegir horario</option>
+
+        <option>14:00</option>
+        <option>14:40</option>
+
+        <option>15:45</option>
+
+        <option>16:20</option>
+
+        <option>17:00</option>
+        <option>17:10</option>
+
+        <option>18:30</option>
+        <option>18:40</option>
+
+        <option>19:05</option>
+        <option>19:20</option>
+        <option>19:40</option>
+
+        <option>20:30</option>
+        <option>20:45</option>
+
+        <option>21:50</option>
+
+        <option>22:30</option>
+        <option>22:45</option>
+
+        <option>23:00</option>
+      </select>
+
+      <button onclick="alert('Entrada reservada correctamente')">
+        Confirmar Compra
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
     <section id="contacto">
 
@@ -408,7 +440,7 @@
 
           <p>
             <strong>Email:</strong><br>
-            soporte@cineargento.com
+            contacto@cineargento.com
           </p>
 
           <button onclick="window.scrollTo({top:0, behavior:'smooth'})">
@@ -423,8 +455,6 @@
 
   </main>
 
-  <!-- FOOTER -->
-
   <footer>
     <p>© 2026 Cine Argento - Todos los derechos reservados</p>
   </footer>
@@ -432,3 +462,5 @@
 </body>
 </html>
 ```
+
+Las imágenes usan enlaces públicos de Unsplash para que funcionen directamente desde internet sin descargar archivos.
